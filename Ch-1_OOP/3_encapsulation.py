@@ -1,7 +1,7 @@
-#Access Modifiers
-#public 
-#protected
-#private
+# Access Modifiers
+# public 
+# protected
+# private
 class MyClass: 
     
     def __init__(self, first, second, third):
@@ -16,6 +16,13 @@ class MyClass:
     def func2(self):
         print(f"func2 , {self._third}")
 
+    #private method
+    def __func3(self):
+        print("private method")
+
+    def call_private(self):
+        self.__func3()
+
 obj1 = MyClass("first", "second","third var")
 obj1.func1()
 obj1.func2()
@@ -25,7 +32,7 @@ obj1.func2()
 obj1.dyn2 = "stu"
 print(obj1.dyn2) 
 
-#don't do this in code as this is protected variable
+# don't do this in code as this is protected variable
 obj1._third = "change this"
 
 print(obj1._third) 
