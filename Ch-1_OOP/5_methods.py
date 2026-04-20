@@ -23,13 +23,13 @@ class MyClass:
     def dummy():
         print("This is a dummy method")
 
-obj = MyClass()
-print(obj.my_var) # 100
+# obj = MyClass()
+# print(obj.my_var) # 100
 # obj._change_value(200)
 # print(obj.my_var) # 200
 # obj2 = MyClass()
 # print(obj2.my_var) # 200
 # obj3 = MyClass()
 # print(obj3.dummy())
-# obj4 = MyClass()
-# print(obj4)
+obj4 = MyClass()
+print(obj4)
